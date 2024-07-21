@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
 import 'custom_text_field.dart';
-import 'note_list_view.dart';
+// import 'note_list_view.dart';
 
 class EditNoteViewBody extends StatelessWidget {
   const EditNoteViewBody({super.key});
