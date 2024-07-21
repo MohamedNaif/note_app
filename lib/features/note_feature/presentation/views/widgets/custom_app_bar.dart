@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/material.dart';
 
 import 'custom_search_icon.dart';
@@ -12,15 +9,16 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
+        CustomSearchIcon(),
+        Spacer(),
         Text(
-          'Notes',
+          'الملاحظات',
           style: TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.bold,
           ),
         ),
-        Spacer(),
-        CustomSearchIcon(),
+       
       ],
     );
   }
