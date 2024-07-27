@@ -38,10 +38,12 @@ class CustomNoteItem extends StatelessWidget {
                     fontSize: 18, fontWeight: FontWeight.normal),
               ),
               trailing: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    note.delete();
+                  },
                   icon: const Icon(
                     Icons.delete,
-                    size: 28,
+                    size: 32,
                   )),
             ),
             Padding(
