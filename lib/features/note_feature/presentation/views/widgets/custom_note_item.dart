@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../../../model/note_model.dart';
 import 'edit_note_view_body.dart';
 
 class CustomNoteItem extends StatelessWidget {
-  const CustomNoteItem({super.key});
+  const CustomNoteItem({super.key, required this.note});
+
+  final NoteModel note;
 
   @override
   Widget build(BuildContext context) {
@@ -17,20 +20,22 @@ class CustomNoteItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(18),
         decoration: BoxDecoration(
-          color: Colors.grey.withOpacity(0.1),
+          color: Color(note.color),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
-              title: const Text(
-                'Note Title',
-                style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+              title: Text(
+                note.title,
+                style:
+                    const TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
               ),
-              subtitle: const Text(
-                'Note content',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
+              subtitle: Text(
+                note.content,
+                style: const TextStyle(
+                    fontSize: 18, fontWeight: FontWeight.normal),
               ),
               trailing: IconButton(
                   onPressed: () {},
@@ -39,11 +44,12 @@ class CustomNoteItem extends StatelessWidget {
                     size: 28,
                   )),
             ),
-            const Padding(
-              padding: EdgeInsets.only(right: 12),
+            Padding(
+              padding: const EdgeInsets.only(right: 12),
               child: Text(
-                'May 21,2024 ',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
+                note.date,
+                style: const TextStyle(
+                    fontSize: 18, fontWeight: FontWeight.normal),
               ),
             ),
           ],
