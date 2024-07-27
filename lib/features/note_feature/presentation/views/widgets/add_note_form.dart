@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 
 import '../../../cubits/add_note/add_note_cubit_cubit.dart';
 import '../../../model/note_model.dart';
+import 'color_list.dart';
 import 'custom_bttn.dart';
 import 'custom_text_field.dart';
 
@@ -45,7 +46,11 @@ class _AddNoteFormState extends State<AddNoteForm> {
               hint: 'Content',
               maxLines: 5),
           const SizedBox(
-            height: 40,
+            height: 20,
+          ),
+          const ColorList(),
+          const SizedBox(
+            height: 20,
           ),
           BlocBuilder<AddNoteCubit, AddNoteCubitState>(
             builder: (context, state) {
@@ -56,7 +61,8 @@ class _AddNoteFormState extends State<AddNoteForm> {
                     _formKey.currentState!.save();
 
                     var currentDate = DateTime.now();
-                    var formattedDate = DateFormat('yyyy-MM-dd').format(currentDate);
+                    var formattedDate =
+                        DateFormat('yyyy-MM-dd').format(currentDate);
                     var noteModel = NoteModel(
                         title: title!,
                         content: content!,
