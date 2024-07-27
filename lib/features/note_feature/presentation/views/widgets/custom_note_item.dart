@@ -16,7 +16,7 @@ class CustomNoteItem extends StatelessWidget {
       onTap: () {
         // navigate to edit note view
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return const EditNoteViewBody();
+          return  EditNoteViewBody(notes: note,);
         }));
       },
       child: Container(
