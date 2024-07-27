@@ -32,7 +32,7 @@ class _NotesViewBodyState extends State<NotesViewBody> {
             height: 50,
           ),
           CustomAppBar(
-            title: 'الملاحظات',
+            title: 'Notes',
             icon: Icons.search,
           ),
           SizedBox(

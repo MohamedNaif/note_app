@@ -5,6 +5,7 @@ import 'package:note_app/features/note_feature/model/note_model.dart';
 import '../../../cubits/notes/notes_cubit.dart';
 import 'custom_app_bar.dart';
 import 'custom_text_field.dart';
+import 'edit_color_list.dart';
 // import 'note_list_view.dart';
 
 class EditNoteViewBody extends StatefulWidget {
@@ -35,7 +36,7 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
                 BlocProvider.of<NotesCubit>(context).featchAllNotes();
                 Navigator.pop(context);
               },
-              title: 'تعديل الملاحظة',
+              title: 'Edit Note',
               icon: Icons.check,
             ),
             const SizedBox(
@@ -55,6 +56,12 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
                 },
                 hint: widget.notes.content,
                 maxLines: 5),
+            const SizedBox(
+              height: 16,
+            ),
+            EditColorList(
+              notes: widget.notes,
+            ),
           ],
         ),
       ),
