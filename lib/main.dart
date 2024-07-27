@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 import 'constant.dart';
-import 'features/note_feature/cubits/add_note/add_note_cubit_cubit.dart';
+// import 'features/note_feature/cubits/add_note/add_note_cubit_cubit.dart';
 import 'features/note_feature/model/note_model.dart';
 import 'features/note_feature/presentation/views/notes_view.dart';
 import 'simple_bloc_observer.dart';
