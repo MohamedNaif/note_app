@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../constant.dart';
@@ -29,9 +30,9 @@ class CustomButton extends StatelessWidget {
                     color: Colors.black,
                   ),
                 )
-              : const Text(
-                  'Add',
-                  style: TextStyle(
+              :  Text(
+                  ('bttn').tr(),
+                  style: const TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
                     fontSize: 20,

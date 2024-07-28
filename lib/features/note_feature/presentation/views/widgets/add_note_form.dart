@@ -1,6 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:intl/intl.dart';
+// import 'package:intl/intl.dart';
 
 import '../../../cubits/add_note/add_note_cubit_cubit.dart';
 import '../../../model/note_model.dart';
@@ -35,7 +36,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
               onSaved: (value) {
                 title = value;
               },
-              hint: 'Title'),
+              hint: ('hintTitle').tr()),
           const SizedBox(
             height: 18,
           ),
@@ -43,7 +44,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
               onSaved: (value) {
                 content = value;
               },
-              hint: 'Content',
+              hint: ('hintContent').tr(),
               maxLines: 5),
           const SizedBox(
             height: 20,

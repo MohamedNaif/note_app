@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:note_app/features/note_feature/model/note_model.dart';
@@ -36,7 +37,7 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
                 BlocProvider.of<NotesCubit>(context).featchAllNotes();
                 Navigator.pop(context);
               },
-              title: 'Edit Note',
+              title: ('secondTitle').tr(),
               icon: Icons.check,
             ),
             const SizedBox(

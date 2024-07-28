@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+// import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:note_app/features/note_feature/presentation/views/widgets/add_note_bottom_sheet.dart';
 
-import '../../cubits/notes/notes_cubit.dart';
+// import '../../cubits/notes/notes_cubit.dart';
 import 'widgets/notes_view_body.dart';
 
 class NotesView extends StatelessWidget {
