@@ -7,7 +7,8 @@
  "change_language": "Change Language",
  "select_option": "Select an option",
   "add_image_gallery": "Add Image from Gallery",
-  "capture_image_camera": "Capture Image using Camera"
+  "capture_image_camera": "Capture Image using Camera",
+  "no_notes_added":"No notes added yet"
 
 
 }

@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -16,7 +17,9 @@ class CustomNoteItem extends StatelessWidget {
       onTap: () {
         // navigate to edit note view
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return  EditNoteViewBody(notes: note,);
+          return EditNoteViewBody(
+            notes: note,
+          );
         }));
       },
       child: Container(
@@ -42,7 +45,7 @@ class CustomNoteItem extends StatelessWidget {
               trailing: IconButton(
                   onPressed: () {
                     note.delete();
-                     BlocProvider.of<NotesCubit>(context).featchAllNotes();
+                    BlocProvider.of<NotesCubit>(context).featchAllNotes();
                   },
                   icon: const Icon(
                     Icons.delete,
@@ -52,7 +55,7 @@ class CustomNoteItem extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(right: 12),
               child: Text(
-                note.date,
+                (note.date).tr(),
                 style: const TextStyle(
                     fontSize: 18, fontWeight: FontWeight.normal),
               ),

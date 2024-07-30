@@ -7,5 +7,6 @@
   "change_language": "تغيير اللغة",
   "select_option": "اختر خيارًا",
   "add_image_gallery": "إضافة صورة من المعرض",
-  "capture_image_camera": "التقاط صورة باستخدام الكاميرا"
+  "capture_image_camera": "التقاط صورة باستخدام الكاميرا",
+  "no_notes_added":"لم يتم إضافة ملاحظات بعد"
 }
