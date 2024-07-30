@@ -4,7 +4,10 @@
  "bttn":"Add",
  "hintTitle":"title",
  "hintContent":"content",
- "change_language": "Change Language"
+ "change_language": "Change Language",
+ "select_option": "Select an option",
+  "add_image_gallery": "Add Image from Gallery",
+  "capture_image_camera": "Capture Image using Camera"
 
 
 }

@@ -13,15 +13,20 @@ class NoteListView extends StatelessWidget {
     return BlocBuilder<NotesCubit, NotesState>(
       builder: (context, state) {
         List<NoteModel> notes = BlocProvider.of<NotesCubit>(context).notes!;
+        // Reverse the notes list to display the last note first
+        List<NoteModel> reversedNotes = List.from(notes.reversed);
+
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 16),
           child: ListView.builder(
-            itemCount: notes.length,
+            itemCount: reversedNotes.length,
             padding: EdgeInsets.zero,
             itemBuilder: (context, index) {
-              return  Padding(
+              return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
-                child: CustomNoteItem(note: notes[index],),
+                child: CustomNoteItem(
+                  note: reversedNotes[index],
+                ),
               );
             },
           ),

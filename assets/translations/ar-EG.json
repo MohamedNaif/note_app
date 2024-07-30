@@ -4,5 +4,8 @@
   "bttn":"إضافة",
   "hintTitle":"العنوان",
   "hintContent":"المحتوى",
-  "change_language": "تغيير اللغة"
+  "change_language": "تغيير اللغة",
+  "select_option": "اختر خيارًا",
+  "add_image_gallery": "إضافة صورة من المعرض",
+  "capture_image_camera": "التقاط صورة باستخدام الكاميرا"
 }

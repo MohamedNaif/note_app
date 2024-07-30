@@ -7,6 +7,7 @@ class CustomSearchIcon extends StatelessWidget {
   final void Function()? onTap;
 
   @override
+  
   Widget build(BuildContext context) {
     return Container(
       height: 48,

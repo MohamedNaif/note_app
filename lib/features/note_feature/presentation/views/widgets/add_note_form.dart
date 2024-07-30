@@ -7,6 +7,7 @@ import '../../../cubits/add_note/add_note_cubit_cubit.dart';
 import '../../../model/note_model.dart';
 import 'color_list.dart';
 import 'custom_bttn.dart';
+// import 'custom_row_icon.dart';
 import 'custom_text_field.dart';
 
 class AddNoteForm extends StatefulWidget {
@@ -49,6 +50,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
           const SizedBox(
             height: 20,
           ),
+          // const CustomRowIcon(),
           const ColorList(),
           const SizedBox(
             height: 20,
